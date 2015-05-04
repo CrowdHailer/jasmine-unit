@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parallelshell 'npm run scripts:watch' 'npm run serve'",
     "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel",
-    "lint:tests": "jshint --reporter node_modules/jshint-stylish/stylish.js test/**.js",
+    "lint:tests": "jshint --reporter node_modules/jshint-stylish/stylish.js test/**.js && lintspaces -e .editorconfig test/*.js -s",
     "serve": "browser-sync start --config bs-config.js",
     "scripts:watch": "watchify test/test.js -o www/test/test.js -v"
   },
@@ -19,6 +19,8 @@
     "jasmine": "~2.3.1",
     "parallelshell": "~1.1.1",
     "jshint": "~2.7.0",
-    "jshint-stylish": "~1.0.2"
+    "jshint-stylish": "~1.0.2",
+    "editorconfig": "~0.12.2",
+    "lintspaces-cli": "0.0.4"
   }
 }
