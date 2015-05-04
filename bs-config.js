@@ -48,7 +48,7 @@ module.exports = {
     "notify": true,
     "scrollProportionally": true,
     "scrollThrottle": 0,
-    "reloadDelay": 100,
+    "reloadDelay": 10,
     "reloadDebounce": 0,
     "plugins": [],
     "injectChanges": true,

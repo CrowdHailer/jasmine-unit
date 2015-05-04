@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --config bs-config.js",
-    "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel"
+    "start": "parallelshell 'npm run scripts:watch' 'npm run serve'",
+    "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel",
+    "serve": "browser-sync start --config bs-config.js",
+    "scripts:watch": "watchify test/test.js -o www/test/test.js -v"
   },
   "author": "Peter Saxton",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "browserify": "~10.0.0",
     "browser-sync": "~2.7.0",
-    "jasmine": "~2.3.1"
+    "watchify": "~3.2.1",
+    "jasmine": "~2.3.1",
+    "parallelshell": "~1.1.1"
   }
 }
