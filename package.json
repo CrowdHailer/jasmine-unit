@@ -1,0 +1,16 @@
+{
+  "name": "jasmine-unit",
+  "version": "0.0.0",
+  "description": "'Setting up tests'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "author": "Peter Saxton",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~10.0.0",
+    "browser-sync": "~2.7.0"
+  }
+}
