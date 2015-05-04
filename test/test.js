@@ -1,1 +1,1 @@
-require('./round.spec')
+require('./round.spec');

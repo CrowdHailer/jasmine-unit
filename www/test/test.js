@@ -4,19 +4,19 @@ module.exports = function () {
 }
 
 },{}],2:[function(require,module,exports){
-var round = require('../src/lib/round')
+var round = require('../src/lib/round');
 
-describe("A suite", function() {
-    it("contains spec with an expectation", function() {
+describe('A suite', function() {
+    it('contains spec with an expectation', function() {
         expect(true).toBe(true);
     });
 
-    it("contains spec round", function() {
+    it('contains spec round', function() {
         expect(2).toBe(round());
     });
 });
 
 },{"../src/lib/round":1}],3:[function(require,module,exports){
-require('./round.spec')
+require('./round.spec');
 
 },{"./round.spec":2}]},{},[3]);
