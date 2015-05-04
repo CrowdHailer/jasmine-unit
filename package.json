@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parallelshell 'npm run scripts:watch' 'npm run serve'",
+    "start": "parallelshell 'npm run scripts:watch' 'npm run serve' 'npm run markdown:watch'",
     "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel",
     "lint:tests": "jshint --reporter node_modules/jshint-stylish/stylish.js test/**.js && lintspaces -e .editorconfig test/*.js -s",
     "preserve": "cp -r test/jasmine* www/test/ && cp test/index.html www/test",
     "serve": "browser-sync start --config bs-config.js",
+    "markdown:watch": "watch 'cp ./src/index.html www' src/",
     "scripts:watch": "watchify test/main.js -o www/test/main.js -v"
   },
   "author": "Peter Saxton",
