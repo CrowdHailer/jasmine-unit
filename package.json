@@ -21,7 +21,7 @@
     "parallelshell": "~1.1.1",
     "jshint": "~2.7.0",
     "jshint-stylish": "~1.0.2",
-    "editorconfig": "~0.12.2",
-    "lintspaces-cli": "0.0.4"
+    "lintspaces-cli": "0.0.4",
+    "html-minifier": "~0.7.2"
   }
 }
