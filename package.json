@@ -8,8 +8,9 @@
     "start": "parallelshell 'npm run scripts:watch' 'npm run serve'",
     "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel",
     "lint:tests": "jshint --reporter node_modules/jshint-stylish/stylish.js test/**.js && lintspaces -e .editorconfig test/*.js -s",
+    "preserve": "cp -r test/jasmine* www/test/ && cp test/index.html www/test",
     "serve": "browser-sync start --config bs-config.js",
-    "scripts:watch": "watchify test/test.js -o www/test/test.js -v"
+    "scripts:watch": "watchify test/main.js -o www/test/main.js -v"
   },
   "author": "Peter Saxton",
   "license": "BSD-2-Clause",
