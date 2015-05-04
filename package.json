@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --config bs-config.js"
+    "start": "browser-sync start --config bs-config.js",
+    "start:share": "browser-sync start --config bs-config.js --tunnel --open tunnel"
+
   },
   "author": "Peter Saxton",
   "license": "BSD-2-Clause",
